@@ -3,8 +3,8 @@
 One editor for pictures and video. Crop, straighten, colour-grade and caption
 either kind of file with the exact same controls, then export.
 
-Everything runs inside the browser tab: the file is decoded with `createImageBitmap`
-and `<video>`, drawn to a canvas, and saved from that canvas. **Nothing is
+Everything runs inside the browser tab: the file is decoded by an `<img>` or a
+`<video>` element, drawn to a canvas, and saved from that canvas. **Nothing is
 uploaded, nothing is installed, there is no backend.**
 
 <!-- A screenshot of the editor with a frame loaded belongs here. -->
