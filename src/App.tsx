@@ -245,7 +245,8 @@ export default function App() {
         const blob = await exportVideo(media, settings, trim, (progress) =>
           setBusy({ label: 'Recording the clip in real time', progress }),
         )
-        saveBlob(blob, `${baseName(media.name)}-cut.webm`)
+        const extension = blob.type.includes('mp4') ? 'mp4' : 'webm'
+        saveBlob(blob, `${baseName(media.name)}-cut.${extension}`)
       } catch (err) {
         setError(err instanceof Error ? err.message : 'The clip could not be recorded.')
       } finally {
