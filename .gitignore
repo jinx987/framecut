@@ -1,0 +1,13 @@
+node_modules/
+dist/
+
+# Local overrides
+.env
+.env.local
+*.local
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
